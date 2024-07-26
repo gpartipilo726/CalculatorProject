@@ -14,8 +14,8 @@
                 <div id="reflector"><span></span><span></span><span></span><span></span></div>
             </div>
             <div id="calc-screen">
-                <div id="prev-input">prev input</div>
-                <div id="input">current input</div>
+                <div id="prev-input"></div>
+                <div id="input"><span id="cursor">|</span></div>
             </div>
             <div id="btn-container">
                 <div id="functions">
@@ -27,25 +27,27 @@
                 </div>
                 <div id="btn-main">
                     <div id="numbers">
-                        <button id="calc-input1" class="btn-nums">1</button>
-                        <button id="calc-input2" class="btn-nums">2</button>
-                        <button id="calc-input3" class="btn-nums">3</button>
-                        <button id="calc-input4" class="btn-nums">4</button>
-                        <button id="calc-input5" class="btn-nums">5</button>
-                        <button id="calc-input6" class="btn-nums">6</button>
+                        
+
                         <button id="calc-input7" class="btn-nums">7</button>
                         <button id="calc-input8" class="btn-nums">8</button>
                         <button id="calc-input9" class="btn-nums">9</button>
+                        <button id="calc-input4" class="btn-nums">4</button>
+                        <button id="calc-input5" class="btn-nums">5</button>
+                        <button id="calc-input6" class="btn-nums">6</button>
+                        <button id="calc-input1" class="btn-nums">1</button>
+                        <button id="calc-input2" class="btn-nums">2</button>
+                        <button id="calc-input3" class="btn-nums">3</button>
                         <button id="calc-input0" class="btn-nums">0</button>
-                        <button id="calc-input." class="btn-nums">.</button>
-                        <button id="calc-negative" class="btn-nus">(-)</button>
+                        <button id="calc-decimal"  class="btn-nums">.</button>
+                        <button id="calc-negative" class="btn-nums">(-)</button>
                     </div>     
                     <div id="operators">
-                        <button id="calc-Add" class="btn-operator">+</button>
-                        <button id="calc-subtract" class="btn-operator">-</button>
-                        <button id="calc-divide" class="btn-operator">÷</button>
-                        <button id="calc-multiply" class="btn-operator">x</button>
-                        <button id="calc-equals" class="btn-operator">=</button>
+                        <button id="calc-divide" disabled class="btn-operator">÷</button>
+                        <button id="calc-multiply" disabled class="btn-operator">x</button>
+                        <button id="calc-subtract" disabled class="btn-operator">-</button>
+                        <button id="calc-add" disabled class="btn-operator">+</button>
+                        <button id="calc-equals" disabled class="btn-operator">=</button>
                     </div>
                </div>
             </div>    

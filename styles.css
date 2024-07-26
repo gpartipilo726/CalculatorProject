@@ -69,7 +69,7 @@
 
 }
 
-#input, #prev-input{
+#cursor, #input, #prev-input{
     font-size: 60px;
     font-family: Consolas, sans-serif;
 }
@@ -158,6 +158,13 @@
     font-weight: 700;
 }
 
+.btn-operator:hover:disabled{
+    border: none;
+    font-weight: 100;
+    color: #06367d;
+    background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+}
+
 #calc-equals{
     background-color: #1439b2;
     border: 2px solid #878d95;
@@ -171,3 +178,22 @@
     color: #f2ebeb;
 }
 
+#calc-equals:disabled {
+    background-color: #0c226a6b;
+    color: #f2ebeb;
+}
+
+#calc-equals:hover:disabled {
+    background-color: #0c226a6b;
+    border: 2px solid #878d95;
+    font-weight: 600;
+    color: #f2ebeb;
+}
+
+.cursorOn {
+
+}
+
+.cursorOff {
+
+}

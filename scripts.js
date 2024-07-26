@@ -18,6 +18,8 @@ const power = document.querySelector("#calc-power");
 const equals = document.querySelector("#calc-equals");
 const clear = document.querySelector("#calc-clear");
 const allClear = document.querySelector("#calc-clearall");
+const cursor = document.querySelector("#cursor");
+
 
 const input = document.querySelector("#input");
 const prevInput = document.querySelector("#prev-input");
@@ -25,6 +27,11 @@ let values = []
 let PreviousResult;
 let operator = '';
 let reset = false;
+
+cursor.addEventListener("load", () =>{
+
+    
+});
 
 
 one.addEventListener("click",(e) =>{
@@ -38,12 +45,10 @@ one.addEventListener("click",(e) =>{
     input.textContent = 1;
     prevInput.textContent += 1;
     values.push('1');
-    console.log(values);
 
 });
 
 two.addEventListener("click",() =>{
-    console.log(reset);
     if(reset){
         prevInput.textContent = '';
         input.textContent = '';
